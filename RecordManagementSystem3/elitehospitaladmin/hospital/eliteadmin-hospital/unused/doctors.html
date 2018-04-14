@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Ospital ng Paranaque Doctors</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+                              
+    <!-- color CSS you can use different color css from css/colors folder -->
+    <!-- We have chosen the skin-blue (green.css) for this starter
+          page. However, you can choose any other skin from folder css / colors .
+-->
+    <link href="css/colors/megna.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/logo.png" width="210px"/></b><span class="hidden-xs"></a></div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        
+                    <!-- /.dropdown -->
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="../plugins/images/users/d1.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Dr. Steave</b> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                            <li><a href="javascript:void(0)"><i class="ti-user"></i>  My Profile</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-email"></i>  Inbox</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-settings"></i>  Account Setting</a></li>
+                            <li><a href="login.html"><i class="fa fa-power-off"></i>  Logout</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                        <!-- input-group -->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search..."> <span class="input-group-btn">
+            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+            </span> </div>
+                        <!-- /input-group -->
+                    </li>
+
+                    </li>
+                    <li class="nav-small-cap m-t-10">--- Main Menu</li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="ti-calendar p-r-10"></i> <span class="hide-menu"> Appointment <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="doctor-schedule.html">Doctor Schedule</a> </li>
+                            <li> <a href="book-appointment.html">Book Appointment</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect active"><i class="fa fa-user-md p-r-10"></i> <span class="hide-menu"> Doctors <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="doctors.html">All Doctors</a> </li>
+                            <li> <a href="add-doctor.html">Add Doctor</a> </li>
+                            <li> <a href="edit-doctor.html">Edit Doctor</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="icon-people p-r-10"></i> <span class="hide-menu"> Patients <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="patients.html">All Patients</a> </li>
+                            <li> <a href="add-patient.html">Add Patient</a> </li>
+                            <li> <a href="edit-patient.html">Edit Patient</a> </li>
+                            <li> <a href="patient-profile.html">Patient Profile</a> </li>
+                        </ul>
+                    </li>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Doctors</h4> </div>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Hospital</a></li>
+                            <li class="active">Doctors</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- .row -->
+                <div class="row">
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d1.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Cardio</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d2.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Dentist</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d3.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Neuro Surgeon</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <!-- .row -->
+                <div class="row">
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d4.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Cardio</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d1.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>ENT Specialist</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d5.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Physio</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <!-- .row -->
+                <div class="row">
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d1.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>M.B.B.S</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d2.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Dentist</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d3.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Neurologist</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <!-- .row -->
+                <div class="row">
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d4.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Orthopedic</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d5.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Surgeon</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <!-- .col -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="white-box">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <a href="contact-detail.html"><img src="../plugins/images/users/d1.jpg" alt="user" class="img-circle img-responsive"></a>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <h3 class="box-title m-b-0">Johnathan Doe</h3> <small>Physician</small>
+                                    <p> <address>
+                            795 Folsom Ave, Suite 600 San Francisco, CADGE 94107<br/><br/>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <!-- .right-sidebar -->
+
+                <!-- /.right-sidebar -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/tether.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!--Style Switcher -->
+    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>
